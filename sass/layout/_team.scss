@@ -1,0 +1,48 @@
+.section--background {
+    background-color: #F5F4FA;
+}
+.team-list {
+    display: flex;
+    justify-content: space-between;
+
+    &__title {
+        color: $primary-title-color;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.2;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+
+.team-list .team-list__item {
+    background-color: $primary-bg-color;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px
+}
+
+.team-list__info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    }
+
+.team-list__text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.2;
+    text-align: center;
+    }
+
+.team-list__network {
+    margin-top: 16px;
+}
+
+.network__link:hover,
+.network__link:focus {
+    background-color: $accent-color;
+}
+
+.network__link:hover .network__icon,
+.network__link:focus .network__icon  {
+    fill: $primary-bg-color;
+}

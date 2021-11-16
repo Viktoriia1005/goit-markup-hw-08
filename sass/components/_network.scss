@@ -1,0 +1,24 @@
+.network {
+    display: flex;
+    justify-content: center;
+
+    &__link {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: color $transition,
+        background-color $transition;}
+    
+    &__icon {
+        width: 20px;
+        height: 20px;
+        fill: #AFB1B8;
+    }
+
+    }
+
+.network .network__item + .network__item {margin-left: 10px;}
+
