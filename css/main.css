@@ -756,9 +756,6 @@ a {
     display: flex;
     justify-content: center;
   }
-  .feature .feature__item:not(:last-child) {
-    margin-right: 30px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -771,6 +768,12 @@ a {
   .feature__item {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -803,6 +806,12 @@ a {
 .feature__icon {
   width: 70px;
   height: 70px;
+}
+
+@media screen and (max-width: 1199px) {
+  .business {
+    display: none;
+  }
 }
 
 .section--other-padding {

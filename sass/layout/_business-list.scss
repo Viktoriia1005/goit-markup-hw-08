@@ -1,3 +1,8 @@
+.business {
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
 .section--other-padding {
     padding-top: 0px;
 }

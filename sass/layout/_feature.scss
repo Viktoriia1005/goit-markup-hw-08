@@ -15,10 +15,7 @@
         @media screen and (min-width: $desktop) {
             display: flex;
             justify-content: center;
-            .feature__item:not(:last-child) {
-                margin-right: 30px;
-            }
-            
+                        
             }
 }
 
@@ -34,10 +31,12 @@
         margin: 15px;
         flex-basis: calc((100% - 60px) / 2);
     }
+    @media screen and (min-width: $desktop) {
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
 }
-
-
-
 
 .feature__title {
     text-align: center;
