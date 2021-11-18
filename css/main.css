@@ -586,6 +586,29 @@ a {
   margin-left: 10px;
 }
 
+.mobile-button {
+  background-color: #ffffff;
+  border: none;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-button {
+    display: none;
+  }
+}
+
+.mobile-button.is-open .mobile-button__icon--close {
+  display: block;
+}
+
+.mobile-button.is-open .mobile-button__icon--menu {
+  display: none;
+}
+
+.mobile-button__icon--close {
+  display: none;
+}
+
 .page-header {
   border-bottom: 1px solid #ECECEC;
 }
@@ -611,6 +634,18 @@ a {
 
 .site-nav--margin {
   margin-left: 93px;
+}
+
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .site-nav {
+    margin-left: 88px;
+  }
 }
 
 .site-nav .site-nav__item + .site-nav__item {
@@ -655,14 +690,39 @@ a {
 }
 
 /* auth nav */
-.auth-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .auth-nav {
+    display: none;
+  }
 }
 
-.auth-nav .auth-nav__item + .auth-nav__item {
-  margin-left: 30px;
+@media (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 84px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .auth-nav .auth-nav__item + .auth-nav__item {
+    margin-left: 30px;
+  }
 }
 
 .auth-nav__link {
@@ -672,9 +732,14 @@ a {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  padding-top: 32px;
-  padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .auth-nav__link:hover, .auth-nav__link:focus {
@@ -689,11 +754,25 @@ a {
   fill: currentColor;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav__mail {
+    width: 14px;
+    height: 10px;
+  }
+}
+
 .auth-nav__tel {
   width: 10px;
   height: 16px;
   margin-right: 10px;
   fill: currentColor;
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .auth-nav__tel {
+    width: 10px;
+    height: 14px;
+  }
 }
 
 .hero {

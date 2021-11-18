@@ -1,0 +1,20 @@
+.mobile-button {
+    background-color: $primary-bg-color;
+    border: none;
+    @media screen and (min-width: $tablet) {
+        display: none;
+    }
+}
+.mobile-button.is-open .mobile-button__icon--close {
+    display: block;
+}
+.mobile-button.is-open .mobile-button__icon--menu {
+    display: none;
+}
+
+.mobile-button__icon {
+    
+}
+.mobile-button__icon--close {
+    display: none;
+}
