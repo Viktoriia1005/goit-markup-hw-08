@@ -1,6 +1,7 @@
 .mobile-button {
     background-color: $primary-bg-color;
     border: none;
+    cursor: pointer;
     @media screen and (min-width: $tablet) {
         display: none;
     }
