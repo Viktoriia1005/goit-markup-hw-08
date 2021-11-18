@@ -822,18 +822,11 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .feature {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .feature {
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -843,7 +836,7 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .feature__item {
     margin: 15px;
     flex-basis: calc((100% - 60px) / 2);
@@ -851,8 +844,8 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .feature__item:not(:last-child) {
-    margin-right: 30px;
+  .feature__item {
+    flex-basis: calc((100% - 120px) / 4);
   }
 }
 

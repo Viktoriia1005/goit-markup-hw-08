@@ -1,22 +1,14 @@
-
-
 .feature {
 
     @media screen and (max-width: 767px) {
         display: block;
         }
 
-        @media (min-width: $tablet) and (max-width: 1199px) {
+        @media screen and (min-width: $tablet) {
             display: flex;
             flex-wrap: wrap;
             margin: -15px;
         }
-
-        @media screen and (min-width: $desktop) {
-            display: flex;
-            justify-content: center;
-                        
-            }
 }
 
 .feature__item {
@@ -27,15 +19,14 @@
         }
         }
 
-    @media (min-width: $tablet) and (max-width: 1199px) {
+    @media screen and (min-width: $tablet) {
         margin: 15px;
         flex-basis: calc((100% - 60px) / 2);
     }
     @media screen and (min-width: $desktop) {
-        &:not(:last-child) {
-            margin-right: 30px;
+        flex-basis: calc((100% - 120px) / 4);
         }
-    }
+    
 }
 
 .feature__title {
@@ -64,7 +55,3 @@
     width: 70px;
     height: 70px;
     }
-
-
-
-// .feature .feature__item {width: 270px;}
