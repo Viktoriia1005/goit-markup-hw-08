@@ -592,6 +592,11 @@ a {
   cursor: pointer;
   padding: 0;
   line-height: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger:hover, .burger:focus {
+  fill: #2196F3;
 }
 
 @media screen and (min-width: 768px) {
@@ -615,6 +620,7 @@ a {
   visibility: hidden;
   pointer-events: none;
   background-color: #ffffff;
+  transition: opasity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu.is-open {
@@ -632,6 +638,7 @@ a {
   cursor: pointer;
   padding: 0;
   line-height: 0;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close:hover, .close:focus {
@@ -654,6 +661,7 @@ a {
   text-align: center;
   letter-spacing: 0.02em;
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-nav__link:hover, .mobile-nav__link:focus {
@@ -677,7 +685,7 @@ a {
   font-size: 34px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  color: #2196F3;
+  color: #757575;
 }
 
 .mobile-auth__mail {
@@ -688,6 +696,10 @@ a {
   color: #757575;
 }
 
+.mobile-auth__tel:hover, .mobile-auth__tel:focus, .mobile-auth__mail:hover, .mobile-auth__mail:focus {
+  color: #2196F3;
+}
+
 .mobile-network {
   display: flex;
 }
@@ -695,8 +707,9 @@ a {
 .mobile-network__item:not(:last-child)::after {
   content: "";
   width: 22px;
-  height: 0;
+  height: 1px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+  background-color: rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
 

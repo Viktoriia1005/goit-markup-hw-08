@@ -4,6 +4,12 @@
     cursor: pointer;
     padding: 0;
     line-height: 0;
+    transition: fill $transition;
+    &:hover,
+    &:focus {
+    fill: $accent-color;
+}
+
     @media screen and (min-width: $tablet) {
         display: none;
     }
@@ -24,6 +30,7 @@
     visibility: hidden;
     pointer-events: none;
     background-color: $primary-bg-color;
+    transition: opasity $transition, visibility $transition;
 
     &.is-open {
         opacity: 1;
@@ -41,6 +48,7 @@
     cursor: pointer;
     padding: 0;
     line-height: 0;
+    transition: fill $transition;
     }
 
 .close:hover, .close:focus {
@@ -62,6 +70,7 @@
     text-align: center;
     letter-spacing: 0.02em;
     color: $primary-title-color;
+    transition: color $transition;
 
     &:hover,
     &:focus {color: $accent-color;}
@@ -81,7 +90,7 @@
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: $accent-color;
+        color: $primary-text-color;
     }
     &__mail {
         font-weight: 500;
@@ -90,7 +99,11 @@
         letter-spacing: 0.02em;
         color: $primary-text-color;
     }
+    &__tel:hover, &__tel:focus, &__mail:hover, &__mail:focus {
+        color: $accent-color;
+    }
 }
+
 
 .mobile-network {
     display: flex;
@@ -98,8 +111,9 @@
     &__item:not(:last-child)::after {
         content: "";
         width: 22px;
-        height: 0;
+        height: 1px;
         border: 1px solid rgba(33, 33, 33, 0.2);
+        background-color: rgba(33, 33, 33, 0.2);
         margin-left: 10px;
     }
     &__item:not(:last-child) {
