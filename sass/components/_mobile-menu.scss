@@ -104,25 +104,11 @@
     }
 }
 
-
 .mobile-network {
     display: flex;
 
-    // &__item:not(:last-child)::after {
-    //     content: "";
-    //     width: 22px;
-    //     height: 1px;
-    //     border: 1px solid rgba(33, 33, 33, 0.2);
-    //     background-color: rgba(33, 33, 33, 0.2);
-    //     margin-left: 10px;
-    // }
-    // &__item:not(:last-child) {
-    //     margin-right: 10px;
-    // }
     &__link {
         padding: 10px;
-    }
-    &__link {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.22;
