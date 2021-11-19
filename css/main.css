@@ -945,13 +945,6 @@ a {
   text-transform: uppercase;
 }
 
-@media screen and (min-width: 1200px) {
-  .hero {
-    font-size: 44px;
-    line-height: 1.36;
-  }
-}
-
 .hero__button {
   padding: 10px 32px;
   font-weight: 700;
