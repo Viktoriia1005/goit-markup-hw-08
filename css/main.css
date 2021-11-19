@@ -634,6 +634,10 @@ a {
   line-height: 0;
 }
 
+.close:hover, .close:focus {
+  fill: #2196F3;
+}
+
 .burger__icon, .close__icon {
   width: 40px;
   height: 40px;
@@ -691,13 +695,13 @@ a {
 .mobile-network__item:not(:last-child)::after {
   content: "";
   width: 22px;
-  height: 1px;
+  height: 0;
   border: 1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
 }
 
 .mobile-network__item:not(:last-child) {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .mobile-network__link {
