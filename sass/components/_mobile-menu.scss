@@ -90,7 +90,7 @@
         font-size: 34px;
         line-height: 1.17;
         letter-spacing: 0.02em;
-        color: $primary-text-color;
+        color: $accent-color;
     }
     &__mail {
         font-weight: 500;
@@ -99,7 +99,7 @@
         letter-spacing: 0.02em;
         color: $primary-text-color;
     }
-    &__tel:hover, &__tel:focus, &__mail:hover, &__mail:focus {
+    &__mail:hover, &__mail:focus {
         color: $accent-color;
     }
 }
@@ -108,24 +108,29 @@
 .mobile-network {
     display: flex;
 
-    &__item:not(:last-child)::after {
-        content: "";
-        width: 22px;
-        height: 1px;
-        border: 1px solid rgba(33, 33, 33, 0.2);
-        background-color: rgba(33, 33, 33, 0.2);
-        margin-left: 10px;
+    // &__item:not(:last-child)::after {
+    //     content: "";
+    //     width: 22px;
+    //     height: 1px;
+    //     border: 1px solid rgba(33, 33, 33, 0.2);
+    //     background-color: rgba(33, 33, 33, 0.2);
+    //     margin-left: 10px;
+    // }
+    // &__item:not(:last-child) {
+    //     margin-right: 10px;
+    // }
+    &__link {
+        padding: 10px;
     }
-    &__item:not(:last-child) {
-        margin-right: 10px;
-    }
-    
     &__link {
         font-weight: 500;
         font-size: 18px;
         line-height: 1.22;
         letter-spacing: 0.02em;
         color: $accent-color;
+    }
+    &__item:not(:last-child) {
+        border-right: 1px solid rgba(33, 33, 33, 0.2);;
     }
     }
 
