@@ -4,7 +4,19 @@
 .page-header .container {
     display: flex;
     align-items: center;
-    justify-content: space-between
+    justify-content: space-between;
+    @media screen and (max-width: 767px) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    @media screen and (min-width: $tablet) {
+        padding-top: 21px;
+        padding-bottom: 21px;
+    }
+    @media screen and (min-width: $desktop) {
+        padding-top: 24px;
+        padding-bottom: 25px;
+    }
 }
 .main-nav {
     display: flex;
