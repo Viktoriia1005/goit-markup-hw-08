@@ -15,9 +15,7 @@
         justify-content: space-between;
 
         }
-    // display: flex;
-    // justify-content: space-between;
-
+    
     &__title {
         color: $primary-title-color;
         font-weight: 500;
@@ -27,10 +25,10 @@
         margin-bottom: 10px;
     }
 }
-.team-list_image {
-    // display: block;
-    // width: 100vw;
-}
+// .team-list_image {
+//     display: block;
+//     width: 100vw;
+// }
 
 
 .team-list__item {

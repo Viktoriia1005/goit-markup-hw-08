@@ -1124,8 +1124,7 @@ a {
 
 @media screen and (max-width: 767px) and (min-width: 768px) {
   .team-list__item {
-    margin: 15px;
-    flex-basis: calc((100% - 60px) / 2);
+    margin-right: 50px;
   }
 }
 
