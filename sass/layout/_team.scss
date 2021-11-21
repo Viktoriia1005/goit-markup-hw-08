@@ -5,12 +5,12 @@
     @media screen and (max-width: 767px) {
         display: block;
         }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
         }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
         display: flex;
         justify-content: space-between;
 
@@ -41,11 +41,11 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
-    @media screen and (min-width: $tablet) {
+    @media screen and (min-width: 768px) {
         margin: 15px;
         flex-basis: calc((100% - 60px) / 2);
     }
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: 1200px) {
         flex-basis: calc((100% - 120px) / 4);
         }
 }
