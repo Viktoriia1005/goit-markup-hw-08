@@ -1124,7 +1124,8 @@ a {
 
 @media screen and (max-width: 767px) and (min-width: 768px) {
   .team-list__item {
-    margin-right: 50px;
+    margin: 15px;
+    flex-basis: calc((100%-60px) / 2);
   }
 }
 
@@ -1132,11 +1133,6 @@ a {
   .team-list__item {
     flex-basis: calc((100% - 120px) / 4);
   }
-}
-
-.team-list__item .team-list_image {
-  display: block;
-  width: 100%;
 }
 
 .team-list__item .team-list__info {
