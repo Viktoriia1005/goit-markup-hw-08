@@ -32,7 +32,7 @@
     
     @media screen and (max-width: 767px) {
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 30px;}
         }
     @media screen  and (min-width: 768px){
         margin: 15px;
@@ -66,5 +66,5 @@
 
 .network__link:hover .network__icon,
 .network__link:focus .network__icon {
-    fill: $primary-bg-color;}
+    fill: $primary-bg-color;
 }
