@@ -58,14 +58,28 @@
 
     /* Work */
     .portfolio {
-        display: flex;
-        flex-wrap: wrap;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
 
     &__item {
         width: 370px;
         margin-right: 30px;
         margin-bottom: 30px;
         border: 1px solid #EEEEEE;
+
+        @media screen and (min-width: 768px) {
+            display: flex;
+            width: 354px;
+            margin: 15px;
+            flex-basis: calc((100% - 60px) / 2);
+        }
+
+        @media screen and (min-width: 1200px) {
+            flex-basis: calc((100% - 90px) / 3);
+            }
         }
     &__item:nth-child(3n) {margin-right: 0px;}
     
