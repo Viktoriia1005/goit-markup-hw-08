@@ -720,6 +720,12 @@ a {
   color: #2196F3;
 }
 
+@media screen and (max-width: 479px) {
+  .mobile-network__link {
+    font-size: 4vw;
+  }
+}
+
 .mobile-network__item:not(:last-child) {
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
