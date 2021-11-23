@@ -344,24 +344,32 @@ a {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-@media screen and (max-width: 676px) {
+@media screen and (min-width: 1200px) {
   .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
 .section__title {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    font-size: 36px;
+    line-height: 1.17;
+    margin-bottom: 50px;
+  }
 }
 
 .backdrop {
@@ -819,15 +827,6 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .auth-nav {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-left: auto;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .auth-nav {
     display: flex;
@@ -899,7 +898,7 @@ a {
 }
 
 .hero {
-  max-width: 480px;
+  max-width: 1600px;
   height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
@@ -921,7 +920,6 @@ a {
 
 @media screen and (min-width: 768px) {
   .hero {
-    max-width: 768px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop.jpg");
   }
 }
@@ -1121,7 +1119,8 @@ a {
 
 .team-list__item {
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 @media screen and (max-width: 767px) {
@@ -1253,7 +1252,8 @@ a {
   .footer__container {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
+    justify-content: space-around;
+    align-items: center;
   }
 }
 
@@ -1271,12 +1271,6 @@ a {
 
 .contacts__adress {
   color: #ffffff;
-}
-
-@media (min-width: 768px) and (max-width: 1199px) {
-  .left {
-    margin-left: 76px;
-  }
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -1355,12 +1349,6 @@ a {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1199px) {
-  .right {
-    margin-left: 165px;
-  }
-}
-
 @media screen and (min-width: 1200px) {
   .right {
     width: 206px;
@@ -1419,7 +1407,6 @@ a {
 @media (min-width: 768px) and (max-width: 1199px) {
   .footer-mailing {
     text-align: center;
-    margin-left: 166px;
     margin-top: 60px;
   }
 }

@@ -8,10 +8,11 @@
         display: block;
         text-align: center;
         }
-    @media (min-width: $tablet) and (max-width: 1199px) {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: baseline;
+    @media (min-width: 768px) and (max-width: 1199px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
         }
     @media screen and (min-width: $desktop) {
             display: flex;
@@ -27,7 +28,7 @@
 
 .left {
 @media (min-width: $tablet) and (max-width: 1199px) {
-    margin-left: 76px;
+    
     }
 @media (min-width: $tablet) and (max-width: 1199px) {
     display: flex;
@@ -93,7 +94,7 @@
         margin-bottom: 60px;
         }
     @media (min-width: $tablet) and (max-width: 1199px) {
-        margin-left: 165px;
+        
         }
     @media screen and (min-width: $desktop) {
         width: 206px;
@@ -149,7 +150,6 @@
 .footer-mailing {
     @media (min-width: $tablet) and (max-width: 1199px) {
         text-align: center;
-        margin-left: 166px;
         margin-top: 60px;
     }
     @media screen and (min-width: $desktop) {
