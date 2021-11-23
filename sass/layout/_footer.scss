@@ -12,7 +12,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: center;
+        // align-items: center;
+        align-items: baseline;
         }
     @media screen and (min-width: $desktop) {
             display: flex;
