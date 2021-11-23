@@ -52,10 +52,6 @@
     }
 }
 
-// .filter .filter__item + .filter__item {margin-left: 8px;}
-
-
-
     /* Work */
     .portfolio {
         @media screen and (max-width: 767px) {
@@ -85,11 +81,7 @@
         }
         }
 
-
-    // &__item:nth-child(3n) {margin-right: 0px;}
-    
-    // &__item:nth-last-child(-n + 3) {margin-bottom: 0px;}
-    
+   
     &__info {padding: 20px 24px; }
     
     &__title {
