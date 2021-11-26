@@ -74,6 +74,9 @@
 
     &:hover,
     &:focus {color: $accent-color;}
+}
+.mobile-nav__link--current {
+    color: $accent-color;
 } 
 
 .mobile-menu__auth {
