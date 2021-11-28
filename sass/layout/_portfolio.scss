@@ -70,6 +70,9 @@
     &__item {
         
         border: 1px solid #EEEEEE;
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
 
         @media screen and (min-width: 768px) {
             width: 354px;
@@ -82,9 +85,7 @@
         }
         }
 
-    &__item:not(:last-child) {
-        margin-bottom: 30px;
-    }
+    
 
     &__info {padding: 20px 24px; }
     
